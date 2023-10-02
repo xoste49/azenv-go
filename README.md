@@ -2,6 +2,8 @@
 Entire application used to check proxy server statuses.  
 It fork https://github.com/Athlon1600/azenv and https://github.com/xoste49/azenv-py
 
+![2023-10-02_134655](https://github.com/xoste49/azenv-go/assets/7299412/bede8298-be56-426c-a093-e3cb3343d165)
+
 ## Installation
 #### Docker
 `docker run --privileged --ulimit nofile=65536:65536 -d --name azenv-go --restart unless-stopped -p 8080:8080 xoste49/azenv-go:latest`
