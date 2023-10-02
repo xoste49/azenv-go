@@ -5,14 +5,14 @@ COPY --from=xcputranslate /xcputranslate /usr/local/bin/xcputranslate
 
 LABEL stage=gobuilder
 
-ENV CGO_ENABLED 0
+ENV CGO_ENABLED=0
 
 WORKDIR /build
 
 COPY go.mod .
 COPY *.go .
 ARG TARGETOS
-ARG TARGETARCH
+ARG TARGETPLATFORM
 RUN --mount=type=cache,target=/root/.cache/go-build \
     --mount=type=cache,target=/go/pkg \
     GOOS=$TARGETOS \
