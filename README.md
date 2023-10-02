@@ -1,5 +1,6 @@
 # azenv-go
-Entire application used to check proxy server statuses.
+Entire application used to check proxy server statuses.  
+It fork https://github.com/Athlon1600/azenv and https://github.com/xoste49/azenv-py
 
 ## Installation
 #### Docker
@@ -30,25 +31,25 @@ systemctl status azenv-go
 
 `h2load --h1 -n100000 -c10000 -t6 http://127.0.0.1`
 
-Go
+Go  
 `finished in 699.62ms, 142934.33 req/s, 25.49MB/s`
 
-Go in Docker
+Go in Docker  
 `finished in 1.17s, 85318.26 req/s, 15.30MB/s`
 
-PHP Nginx in Docker
+[PHP Nginx in Docker](https://github.com/Athlon1600/azenv)  
 `finished in 10.94s, 9142.11 req/s, 0B/s`
 
-Python Flask in Docker
+[Python Flask in Docker](https://github.com/xoste49/azenv-py)  
 `finished in 33.36s, 2879.40 req/s, 2.31MB/s`
 
-Python Fastapi in Docker
+Python Fastapi in Docker  
 `finished in 23.23s, 4304.22 req/s, 899.51KB/s`
 
 ---
 `h2load --h1 -n1000000 -c1000 -t6 http://127.0.0.1`
 
-Go 
+Go   
 `finished in 4.28s, 233496.52 req/s, 41.64MB/s`
 
 
